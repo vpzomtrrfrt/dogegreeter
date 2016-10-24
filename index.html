@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<style type="text/css">
+			@font-face {
+				font-family: ComicSans;
+				src: url('./ComicSans.ttf') format('truetype');
+			}
+			* {
+				font-family: ComicSans
+			}
+			body {
+				background-image: url('./doge.jpeg');
+				background-size: 70px 70px
+			}
+			#mainbox {
+				position: absolute;
+				left: 50%;
+				top: 50%;
+				transform: translate(-50%, -50%)
+			}
+			#login {
+				color: magenta;
+				float: right
+			}
+		</style>
+	</head>
+	<body>
+		<div id="mainbox">
+			<select id="sessions"></select>
+			<p id="message"></p>
+			<div id="prompt"></div>
+			<input id="entry" type="text" />
+			<button id="login">such login</button>
+		</div>
+		<!--<script type="text/dogescript" src="main.djs"></script>
+		<script type="text/javascript" src="dogescript.min.js"></script>-->
+		<script type="text/javascript" src="main.js"></script>
+	</body>
+</html>
